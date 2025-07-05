@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Layout from '@/components/shared/Layout';
-import HomePage from '@/pages/HomePage';
+import HomePage from '@/pages/HomePage.jsx';
 import FindDoctorsPage from '@/pages/FindDoctorsPage';
 import DoctorDetailsPage from '@/pages/DoctorDetailsPage';
 import FindMedicinesPage from '@/pages/FindMedicinesPage';
@@ -12,7 +12,7 @@ import SymptomCheckerPage from '@/pages/SymptomCheckerPage';
 import UserProfilePage from '@/pages/UserProfilePage.jsx'; // Added import
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/ThemeProvider';
-import { UserProvider, useUser } from '@/contexts/UserContext.jsx';
+import { UserProvider, useUser } from './contexts/UserContext.jsx';
 import LoginModal from '@/components/auth/LoginModal';
 import HealthDetailsModal from '@/components/auth/HealthDetailsModal.jsx';
 
